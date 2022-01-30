@@ -1,0 +1,7 @@
+
+@mixin blockDimention ($flex, $width, $flexDirection,$justifyContent) {
+  display: $flex;
+  width: $width;
+  flex-direction: $flexDirection;
+  justify-content: $justifyContent;
+}

@@ -1,0 +1,52 @@
+@import "sass/variables";
+@import "./sass/mixins";
+
+.body {
+  text-align: center;
+  background-color: $bgColor;
+  color: $textColor;
+  min-height: 100vh;
+
+  .li {
+    display: grid;
+
+    .block {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      .taskBlock {
+        @include blockDimention(flex, 200px, row, space-between);
+      }
+
+      .tagBlock {
+        @include blockDimention(flex, 200px, row, space-between);
+      }
+    }
+  }
+
+  .button {
+    padding: 10px 20px;
+    background-color: $primaryColor;
+    color: $textColor;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.4s;
+
+    &:hover {
+      transform: translateY(-7px);
+      background-color: transparent;
+      border: 2px solid $primaryColor;
+    }
+  }
+
+}
+
+
+
+
+
+
+
