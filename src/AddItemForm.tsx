@@ -32,10 +32,10 @@ export function AddItemForm(props: AddItemFormPropsType) {
         <input value={title}
                onChange={onChangeHandler}
                onKeyPress={onKeyPressHandler}
-               className={error ? "error" : ""}
+
         />
         <button onClick={addTask}>+</button>
-        {error && <div className="error-message">{error}</div>}
+        {error && <div>{error}</div>}
     </div>
 
 

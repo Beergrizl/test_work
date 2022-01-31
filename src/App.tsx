@@ -97,12 +97,6 @@ function App() {
                 <div>
                     <ul>
                         {task.map(t => {
-                            // let testTitle = t.title.split(" ").map(elem=>{
-                            //     if(elem.includes("#")){
-                            //         return <span style={{color: "red"}}>{" "+ elem}</span>
-                            //     }
-                            //     return <span>{" "+ elem}</span>
-                            // })
 
                             const removeTaskHandler = () => removeTask(t.id)
                             const removeTagHandler = () => removeTag(t.id)
@@ -115,7 +109,7 @@ function App() {
                             }
 
                             return <li key={t.id} className={s.li}>
-                                {/*<div>{testTitle}</div>*/}
+
                                 <div className={s.block}>
 
                                     <div className={s.taskBlock}>
